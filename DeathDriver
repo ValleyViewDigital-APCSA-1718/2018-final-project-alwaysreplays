@@ -1,0 +1,61 @@
+
+/**
+ * Sergio Larios
+ * Death Driver
+ */
+
+import java.util.Scanner;
+
+public class DeathDriver
+{
+    public static void main (String [] args)
+    {
+        Scanner Scan = new Scanner(System.in);
+        System.out.println("Enter how will you die the first time");
+        String W1 = Scan.nextLine();
+        
+        System.out.println("Enter how you will die the second time");
+        String W2 = Scan.nextLine();
+        
+        System.out.println("Enter how you will die the third time");
+        String W3 = Scan.nextLine();
+        
+        System.out.println("Enter how you will die the fourth time");
+        String W4 = Scan.nextLine();
+        
+        System.out.println("Enter how you will die the fifth time");
+        String W5 = Scan.nextLine();
+        
+        
+        System.out.println("Enter the location of your first death");
+        String L1 = Scan.nextLine();
+        
+        System.out.println("Enter the location of your second death");
+        String L2 = Scan.nextLine();
+        
+        System.out.println("Enter the location of your third death");
+        String L3 = Scan.nextLine();
+        
+        System.out.println("Enter the location of your fourth death");
+        String L4 = Scan.nextLine();
+        
+        
+        System.out.println("Enter the year of your first death ");
+        int T1 = Scan.nextInt();
+        
+        System.out.println("Enter the year of your second death ");
+        int T2 = Scan.nextInt();
+        
+        System.out.println("Enter the year of your third death ");
+        int T3 = Scan.nextInt();
+        
+        System.out.println("Enter the year of your fourth death ");
+        int T4 = Scan.nextInt();
+        
+        //Creates Object so the player can receive results
+        Death game1 = new Death (W1, W2, W3, W4, W5, T1, T2, T3, T4, L1, L2, L3, L4);
+        System.out.println(game1.toString() + "\n" + "\n" + "Guess what. " +
+        game1.death());
+        
+    }
+}
