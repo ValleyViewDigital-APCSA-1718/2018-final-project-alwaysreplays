@@ -1,0 +1,117 @@
+
+/**
+ * Sergio Larios
+ * class Death
+ * 
+ */
+
+import java.util.ArrayList;
+
+public class Death extends AbstractForDeath
+{
+    // instance variables - replace the example below with your own
+    private ArrayList<String> WaysToDie = new ArrayList<String>(5);
+    private ArrayList<Integer> TimeOfDeath = new ArrayList<Integer>(4);
+    private ArrayList<String> LocationOfDeath = new ArrayList<String>(4);
+
+    /**
+     * Constructor for objects of class Death
+     */
+    public Death()
+    {
+        this.WaysToDie = WaysToDie;
+        this.TimeOfDeath = TimeOfDeath;
+        this.LocationOfDeath = LocationOfDeath;
+       
+    }// End Zero - Constructor
+    
+    public Death (String W1, String W2, String W3, String W4, String W5, Integer T1, Integer T2, Integer T3, Integer T4,
+                 String L1, String L2, String L3, String L4)
+    {
+        WaysToDie.add(W1);
+        WaysToDie.add(W2);
+        WaysToDie.add(W3);
+        WaysToDie.add(W4);
+        WaysToDie.add(W5);
+        TimeOfDeath.add(T1);
+        TimeOfDeath.add(T2);
+        TimeOfDeath.add(T3);
+        TimeOfDeath.add(T4);
+        LocationOfDeath.add(L1);
+        LocationOfDeath.add(L2);
+        LocationOfDeath.add(L3);
+        LocationOfDeath.add(L4);
+        
+    }
+    
+    public void Anything()
+    {
+        for (int a = 0; a < WaysToDie.size(); a++)
+        {
+            if(true)
+            {
+              WaysToDie.remove(Math.random() * 4 );  
+              
+            }// End if Statement for WaysToDie removal
+            
+        }//End WaysToDie for loop
+        
+        for (int a = 0; a < TimeOfDeath.size(); a++)
+        {
+            if (true)
+            {
+                TimeOfDeath.remove(Math.random() * 7 );
+                
+            }//End if statement for TimeOfDeath removal
+            
+        }//End TimeOfDeath for loop
+        
+        for (int a = 0; a < LocationOfDeath.size(); a++)
+        {
+            if (true)
+            {
+                LocationOfDeath.remove(Math.random() * 4 );
+                
+            }//End if statement for LocationOfDeath
+            
+        }//End LocationOfDeath for loop
+    }
+    
+    public String getWaysToDie()
+    {
+        return WaysToDie.get(1);
+    }
+    
+    public int getTimeOfDeath()
+    {
+        return TimeOfDeath.get(1);
+    }
+    
+    public String getLocationOfDeath()
+    {
+        return LocationOfDeath.get(1);
+    }
+    
+    public String death()
+    {
+        return ("You just died");
+    }
+    
+    public String toString()
+    {
+        String result;
+        result = "The way you will die is : " + getWaysToDie() + ", The time of your death is : " + getTimeOfDeath() + ", The location of your death is : " + getLocationOfDeath(); 
+        
+        return result;
+    }
+}
+
+
+
+
+
+
+
+
+
+
