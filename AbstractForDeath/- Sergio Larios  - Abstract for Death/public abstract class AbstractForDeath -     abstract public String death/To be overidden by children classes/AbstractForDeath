@@ -1,0 +1,10 @@
+/**
+ * Sergio Larios
+ * Abstract for Death
+ */
+
+public abstract class AbstractForDeath
+{
+    abstract public String death();//To be overidden by children classes
+}//End AbstractForDeath class
+
