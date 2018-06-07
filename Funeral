@@ -1,0 +1,95 @@
+
+/**
+ * Sergio Larios
+ * class Funeral
+ * 
+ */
+
+import java.util.ArrayList;
+
+public class Funeral extends Death
+{
+    // instance variables - replace the example below with your own
+    private ArrayList<String> SeasonOfFuneral = new ArrayList<String>(3);
+    private ArrayList<String> LocationOfFuneral = new ArrayList<String>(3);
+    /**
+     * Constructor for objects of class Funeral
+     */
+    public Funeral()
+    {
+        this.SeasonOfFuneral = SeasonOfFuneral;
+        this.LocationOfFuneral = LocationOfFuneral;
+        
+    }// End Zero - Constructor
+    
+    public Funeral (String WW1, String WW2, String WW3, String WW4, String WW5, Integer TW1, Integer TW2, Integer TW3 , Integer TW4,
+                 String LW1, String LW2, String LW3, String LW4,
+                 String SF1, String SF2, String SF3, String LF1, String LF2, String LF3)
+    {
+        super(WW1, WW2, WW3, WW4, WW5, TW1, TW2, TW3, TW4, LW1, LW2, LW3, LW4);
+
+        SeasonOfFuneral.add(SF1);
+        SeasonOfFuneral.add(SF2);
+        SeasonOfFuneral.add(SF3);
+
+        LocationOfFuneral.add(LF1);
+        LocationOfFuneral.add(LF2);
+        LocationOfFuneral.add(LF3);
+
+    }
+    
+    public void Anything()
+    {   
+        for (int a = 0; a < SeasonOfFuneral.size(); a++)
+        {
+            if (true)
+            {
+                SeasonOfFuneral.remove(Math.random() * 7 );
+                
+            }//End if statement for SeasonOfFuneral removal
+            
+        }//End SeasonOfFuneral for loop
+        
+        for (int a = 0; a < LocationOfFuneral.size(); a++)
+        {
+            if (true)
+            {
+                LocationOfFuneral.remove(Math.random() * 4 );
+                
+            }//End if statement for LocationOfFuneral
+            
+        }//End LocationOfFuneral for loop
+        
+
+    }
+    
+
+    public String getSeasonOfFuneral()
+    {
+        return SeasonOfFuneral.get(1);
+    }
+    
+    public String getLocationOfFuneral()
+    {
+        return LocationOfFuneral.get(1);
+    }
+    
+    
+    public String toString()
+    {
+        String result;
+        result = "The season of your funeral is : " + getSeasonOfFuneral() + "The location of your funeral is : " + getLocationOfFuneral(); 
+        
+        return result;
+    }
+}
+
+
+
+
+
+
+
+
+
+
