@@ -1,0 +1,81 @@
+
+/**
+ * Sergio Larios
+ * Funeral Driver
+ */
+
+import java.util.Scanner;
+
+public class FuneralDriver
+{
+    public static void main (String [] args)
+    {
+        Scanner Scan2 = new Scanner(System.in);
+        
+        System.out.println("Enter how will you die the first time");
+        String WW1 = Scan2.nextLine();
+        
+        System.out.println("Enter how you will die the second time");
+        String WW2 = Scan2.nextLine();
+        
+        System.out.println("Enter how you will die the third time");
+        String WW3 = Scan2.nextLine();
+        
+        System.out.println("Enter how you will die the fourth time");
+        String WW4 = Scan2.nextLine();
+        
+        System.out.println("Enter how you will die the fifth time");
+        String WW5 = Scan2.nextLine();
+        
+        
+        System.out.println("Enter the location of your first death");
+        String LW1 = Scan2.nextLine();
+        
+        System.out.println("Enter the location of your second death");
+        String LW2 = Scan2.nextLine();
+        
+        System.out.println("Enter the location of your third death");
+        String LW3 = Scan2.nextLine();
+        
+        System.out.println("Enter the location of your fourth death");
+        String LW4 = Scan2.nextLine();
+        
+        
+        System.out.println("Enter the year of your first death ");
+        int TW1 = Scan2.nextInt();
+        
+        System.out.println("Enter the year of your second death ");
+        int TW2 = Scan2.nextInt();
+        
+        System.out.println("Enter the year of your third death ");
+        int TW3 = Scan2.nextInt();
+        
+        System.out.println("Enter the year of your fourth death ");
+        int TW4 = Scan2.nextInt();
+        
+     
+        
+        System.out.println("Enter the first location you would like your funeral to be at :");
+        String LF1 = Scan2.nextLine();
+        
+        System.out.println("Enter the second location you would like your funeral to be at : ");
+        String LF2 = Scan2.nextLine();
+        
+        System.out.println("Enter the third location you would like your funeral to be at : ");
+        String LF3 = Scan2.nextLine();
+        
+        
+        System.out.println("Choose a season for your funeral :");
+        String SF1 = Scan2.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String SF2 = Scan2.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String SF3 = Scan2.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String SF4 = Scan2.nextLine();
+    
+    }
+}
