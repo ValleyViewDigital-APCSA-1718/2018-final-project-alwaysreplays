@@ -1,0 +1,115 @@
+
+/**
+ * Sergio Larios
+ * Reincarnation Driver
+ */
+
+import java.util.Scanner;
+
+public class ReincarnationDriver  
+{
+    public static void main (String [] args)
+    {
+        Scanner Scan3 = new Scanner(System.in);
+        
+        System.out.println("Enter how will you die the first time");
+        String RW1 = Scan3.nextLine();
+        
+        System.out.println("Enter how you will die the second time");
+        String RW2 = Scan3.nextLine();
+        
+        System.out.println("Enter how you will die the third time");
+        String RW3 = Scan3.nextLine();
+        
+        System.out.println("Enter how you will die the fourth time");
+        String RW4 = Scan3.nextLine();
+        
+        System.out.println("Enter how you will die the fifth time");
+        String RW5 = Scan3.nextLine();
+        
+        
+        System.out.println("Enter the location of your first death");
+        String RL1 = Scan3.nextLine();
+        
+        System.out.println("Enter the location of your second death");
+        String RL2 = Scan3.nextLine();
+        
+        System.out.println("Enter the location of your third death");
+        String RL3 = Scan3.nextLine();
+        
+        System.out.println("Enter the location of your fourth death");
+        String RL4 = Scan3.nextLine();
+        
+        
+        System.out.println("Enter the year of your first death ");
+        int RT1 = Scan3.nextInt();
+        
+        System.out.println("Enter the year of your second death ");
+        int RT2 = Scan3.nextInt();
+        
+        System.out.println("Enter the year of your third death ");
+        int RT3 = Scan3.nextInt();
+        
+        System.out.println("Enter the year of your fourth death ");
+        int RT4 = Scan3.nextInt();
+        
+     
+        
+        System.out.println("Enter the first location you would like your funeral to be at :");
+        String LFR1 = Scan3.nextLine();
+        
+        System.out.println("Enter the second location you would like your funeral to be at : ");
+        String LFR2 = Scan3.nextLine();
+        
+        System.out.println("Enter the third location you would like your funeral to be at : ");
+        String LFR3 = Scan3.nextLine();
+        
+        
+        System.out.println("Choose a season for your funeral :");
+        String RSF1 = Scan3.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String RSF2 = Scan3.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String RSF3 = Scan3.nextLine();
+        
+        System.out.println("Choose a season for your funeral :");
+        String RSF4 = Scan3.nextLine();
+        
+        
+        System.out.println("Enter who you would choose first to reincarnate into");
+        String WR1 = Scan3.nextLine();
+        
+        System.out.println("Enter the second person who you would choose second to reincarnate into");
+        String WR2 = Scan3.nextLine();
+        
+        System.out.println("Enter the third person who you would choose to reincarnate into");
+        String WR3 = Scan3.nextLine();
+        
+        
+        System.out.println("Enter the location of your first desired location to reincarnate");
+        String LR1 = Scan3.nextLine();
+        
+        System.out.println("Enter the location of your second desired location to reincarante ");
+        String LR2 = Scan3.nextLine();
+        
+        System.out.println("Enter the location of your third desired location to reincarnate ");
+        String LR3 = Scan3.nextLine();
+        
+        
+        System.out.println("Enter the year of your first reincarnation ");
+        int TR1 = Scan3.nextInt();
+        
+        System.out.println("Enter the year of your second reincarnation ");
+        int TR2 = Scan3.nextInt();
+        
+        System.out.println("Enter the year of your third reincarnation ");
+        int TR3 = Scan3.nextInt();
+        
+        Reincarnation game3 = new Reincarnation (RW1, RW2, RW3, RW4, RW5, RT1, RT2, RT3, RT4, RL1, RL2, RL3, RL4, RSF1, RSF2, RSF3,LFR1, LFR2, LFR3, WR1, WR2, WR3, TR1, TR2, TR3, LR1, LR2, LR3);
+        System.out.println(game3.toString() + "\n" + "\n" + "Congtatulations! " + game3.death());
+
+        
+    }
+}
