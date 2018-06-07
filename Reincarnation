@@ -1,0 +1,114 @@
+
+/**
+ * Sergio Larios
+ * class Reincarnation
+ * 
+ */
+
+import java.util.ArrayList;
+
+public class Reincarnation extends Death
+{
+    // instance variables - replace the example below with your own
+    private ArrayList<String> WhoToReincarnateTo = new ArrayList<String>(3);
+    private ArrayList<Integer> TimeOfReincarnation = new ArrayList<Integer>(3);
+    private ArrayList<String> LocationOfReincarnation = new ArrayList<String>(3);
+    /**
+     * Constructor for objects of class Reincarnation
+     */
+    public Reincarnation()
+    {
+        this.WhoToReincarnateTo = WhoToReincarnateTo;
+        this.TimeOfReincarnation = TimeOfReincarnation;
+        this.LocationOfReincarnation = LocationOfReincarnation;
+     
+    }// End Zero - Constructor
+    
+    public Reincarnation (String RW1, String RW2, String RW3, String RW4, String RW5, Integer RT1, Integer RT2, Integer RT3, Integer RT4,
+                 String RL1, String RL2, String RL3, String RL4, String RSF1, String RSF2, String RSF3, String LFR1, String LFR2, String LFR3, String WR1, String WR2, String WR3, Integer TR1, Integer TR2, Integer TR3,
+                 String LR1, String LR2, String LR3)
+    {
+        super(RW1, RW2, RW3, RW4, RW5, RT1, RT2, RT3, RT4, RL1, RL2, RL3, RL4);
+        WhoToReincarnateTo.add(WR1);
+        WhoToReincarnateTo.add(WR2);
+        WhoToReincarnateTo.add(WR3);
+
+        TimeOfReincarnation.add(TR1);
+        TimeOfReincarnation.add(TR2);
+        TimeOfReincarnation.add(TR3);
+
+        LocationOfReincarnation.add(LR1);
+        LocationOfReincarnation.add(LR2);
+        LocationOfReincarnation.add(LR3);
+
+    }
+    
+    public void Anything()
+    {
+        for (int a = 0; a < WhoToReincarnateTo.size(); a++)
+        {
+            if(true)
+            {
+              WhoToReincarnateTo.remove(Math.random() * 4 );  
+              
+            }// End if Statement for WhoToReincarnateTo removal
+            
+        }//End WhoToReincarnateTo for loop
+        
+        for (int a = 0; a < TimeOfReincarnation.size(); a++)
+        {
+            if (true)
+            {
+                TimeOfReincarnation.remove(Math.random() * 7 );
+                
+            }//End if statement for TimeOfReincarnation removal
+            
+        }//End TimeOfReincarnation for loop
+        
+        for (int a = 0; a < LocationOfReincarnation.size(); a++)
+        {
+            if (true)
+            {
+                LocationOfReincarnation.remove(Math.random() * 4 );
+                
+            }//End if statement for LocationOfReincarnation
+            
+        }//End LocationOfReincarnation for loop
+        
+    }
+    
+    public Integer getTimeOfReincarnation()
+    {
+        return TimeOfReincarnation.get(1);
+    }
+    
+    public String getLocationOfReincarnation()
+    {
+        return LocationOfReincarnation.get(1);
+    }
+    
+   //Brain Method
+   public String language() 
+   {
+       return "Now you can suffer from the harshness of life again!";
+   }//End Abstract Method
+
+    
+    public String toString()
+    {
+        String result;
+        result ="The season of your funeral is : " + getTimeOfReincarnation() + "The location of your funeral is : " + getLocationOfReincarnation(); 
+        
+        return result;
+    }
+}
+
+
+
+
+
+
+
+
+
+
